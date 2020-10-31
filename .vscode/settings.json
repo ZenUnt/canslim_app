@@ -1,0 +1,13 @@
+{
+  "emmet.includeLanguages": {
+    "erb": "html",
+  },
+  
+  "emmet.triggerExpansionOnTab": true,
+  "[css]": {
+    
+
+    "editor.suggest.insertMode": "replace"
+  }
+  
+}
