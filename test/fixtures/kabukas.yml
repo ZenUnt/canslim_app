@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2020-11-12
+  start_val: 1.5
+  high_val: 1.5
+  low_val: 1.5
+  end_val: 1.5
+  dekidaka: 1
+  tyouseiti: 1
+
+two:
+  date: 2020-11-12
+  start_val: 1.5
+  high_val: 1.5
+  low_val: 1.5
+  end_val: 1.5
+  dekidaka: 1
+  tyouseiti: 1

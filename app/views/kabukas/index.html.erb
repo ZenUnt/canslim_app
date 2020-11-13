@@ -1,0 +1,35 @@
+<% provide(:title, "株価") %>
+<h1>株価</h1>
+
+<%= form_tag import_kabukas_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "インポート" %>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>日付</th>
+      <th>始値</th>
+      <th>高値</th>
+      <th>安値</th>
+      <th>終値</th>
+      <th>出来高</th>
+      <th>終値調整値</th>
+    </tr>
+  </thead>
+
+  <tbody>
+     <% @records.each do |r| %>
+       <tr>
+         <td><%= r.日付 %></td>
+         <td><%= r.始値 %></td>
+         <td><%= r.高値 %></td>
+         <td><%= r.安値 %></td>
+         <td><%= r.終値 %></td>
+         <td><%= r.出来高 %></td>
+         <td><%= r.終値調整値 %></td>
+       </tr>
+     <% end %>
+  </tbody>
+</table>

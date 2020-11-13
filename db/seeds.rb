@@ -13,3 +13,13 @@ User.create!(name:  "Example User",
                password:              password,
                password_confirmation: password)
 end
+
+# Kabuka.create!(
+#   日付: '2010-10-10',
+#   始値: 100,
+#   高値: 150,
+#   安値: 70,
+#   終値: 130,
+#   出来高: 30000,
+#   終値調整値: 1,
+# )

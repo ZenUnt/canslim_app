@@ -1,0 +1,2 @@
+module KabukasHelper
+end

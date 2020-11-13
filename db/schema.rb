@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20201108124923) do
+ActiveRecord::Schema.define(version: 20201112122009) do
+
+  create_table "kabukas", id: false, force: :cascade do |t|
+    t.date "日付"
+    t.float "始値"
+    t.float "高値"
+    t.float "安値"
+    t.float "終値"
+    t.integer "出来高"
+    t.integer "終値調整値"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
